@@ -35,3 +35,41 @@ x%=5
 print("Modulus & Assign",x) #Modulus & Assign 1.0
 x**10
 print("Exponentiate & Assign",x) #Exponentiate & Assign 1.0
+
+
+#4 Logical Operators
+# AND Operator
+print(True and True) #True
+print(not True) #False
+print(True or False) #True
+x=10 
+y=20
+print(x > 5 and y < 30) #True
+print(x > 15 or y < 30) #True
+print(not (x > 5)) #False 
+print(True | False) #Bitwise Or Opeartor #True
+print(True & True) #Bitwise And Opeartor
+print(~ True) # -2 #Bitwise Not
+
+
+#5 Membership operator
+# in not in
+places=["Nandyal", "Hyderabad", "Kurnool", "Banglore"]
+print("Nandyal" in places) #True
+print("Ameerper" not in places) #True
+print("Hyderabad" not in places) #False
+
+name="Attar Afrin"
+print(" " in name) # True
+print("AA" in name) #False
+print("A " in name) #False
+
+#Bitwise Operators
+x = 5 # Binary: 0101
+y = 3 # Binary: 0011
+print(x & y) #1 
+print(x | y) #7 
+print(x ^ y) #6
+print(~x) #-6 
+print(x << 1) #10 
+print(x >> 1) #2 
