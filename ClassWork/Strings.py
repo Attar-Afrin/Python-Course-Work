@@ -3,14 +3,19 @@
 str1 = "Hello"
 str2 = "World"
 result = str1 + " " + str2
-print(result)
+print(result) #Hello World
 
 #2 Repetition
-print("Python " *3)
-print("[a]"*5)
+print("Python " *3) #Python Python Python 
+print("[a]"*5) #[a][a][a][a][a]
 
 
 #3 Indexing
 Language="English"
-print(Language[5])
-print(Language[-1])
+print(Language[5]) #s
+print(Language[-1]) #h
+
+#4 Slicing
+print(Language[0:3]) #Eng
+print(Language[:]) #English
+print(Language[::-1]) #hsilgnE
