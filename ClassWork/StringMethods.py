@@ -33,3 +33,5 @@ print("42".zfill(5)) #00042
 print("Name: {}, Age:{}".format("Tom", 25)) #Name: Tom, Age:25
 print("{name} is{age}".format_map({'name':'Tom', 'age': 25})) #Tom is25
 
+#4 Search
+
