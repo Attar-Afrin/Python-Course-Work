@@ -33,5 +33,14 @@ print("42".zfill(5)) #00042
 print("Name: {}, Age:{}".format("Tom", 25)) #Name: Tom, Age:25
 print("{name} is{age}".format_map({'name':'Tom', 'age': 25})) #Tom is25
 
-#4 Search
+#4 Search & Find Methods
+print("hello".find("l")) #2
+print("hello".rfind("l")) #3
+print("hello".index("e")) #1
+print("hello".rindex("l")) #1
+print("banana".count("a")) #3
+
+#5 String Testing Methods
+
+
 
