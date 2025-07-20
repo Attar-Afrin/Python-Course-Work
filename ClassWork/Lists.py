@@ -43,6 +43,26 @@ numbers.remove(100)
 print(numbers) #[10, 15, 20, 40, 50, 60, 70, 80]
 print(numbers.pop(2)) #20
 
+#3 List Methods
+numbers = [3, 1, 4, 1, 5, 9]
+print(numbers.count(1)) # 2
+print(numbers.index(4)) # 2
+numbers.sort()
+print(numbers) # [1, 1, 3, 4, 5, 9]
+numbers.reverse()
+print(numbers) # [9, 5, 4, 3, 1, 1]
+numbers.append(123)
+print(numbers) #[9, 5, 4, 3, 1, 1, 123]
+numbers.sort(reverse=True)
+print(numbers) #[123, 9, 5, 4, 3, 1, 1]
+list2=numbers.copy()
+print(list2)
+print(max(numbers)) #123
+print(min(numbers)) #1
+print(sum(numbers)) #146
+print(numbers) #[123, 9, 5, 4, 3, 1, 1]
+
+
 
 
 
