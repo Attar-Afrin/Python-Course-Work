@@ -41,6 +41,9 @@ print("hello".rindex("l")) #1
 print("banana".count("a")) #3
 
 #5 String Testing Methods
+Str="Python Programming is easy to learn"
+print(max(Str))
+print(min())
 
 
 
