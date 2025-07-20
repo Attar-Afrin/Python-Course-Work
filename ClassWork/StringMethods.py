@@ -4,6 +4,9 @@ print(len(text)) #11
 
 print(max("Python PRogramming")) #y
 print(min("JavaProgramming")) #J
+Str="Python Programming is easy to learn"
+print(max(Str)) #y
+ # print(min()) #Type Error
 
 '''NOTE---->The Ascii value of a space is 32
  ,value of 'A' is 65 and a is 97'''
@@ -41,9 +44,39 @@ print("hello".rindex("l")) #1
 print("banana".count("a")) #3
 
 #5 String Testing Methods
-Str="Python Programming is easy to learn"
-print(max(Str))
-print(min())
+# All the testing methods is starts from the is...
+str="Python is Easy to Learn"
+print(str.startswith('Python')) #True
+print("python".endswith("on")) #True
+print("Hello".isalpha()) #True
+print("abc123".isalnum()) #True
+print("@AB35".isalnum()) #False
+print(str.islower()) #False
+print(str.isidentifier()) #False
+print('324242434'.isdecimal()) #True
+print('2/7'.isdecimal()) #False
+print('2/7'.isnumeric()) #False
+
+#6 Splitting & Joining
+print("a,b,c,g,fwf".split()) #['a,b,c,g,fwf']
+print("a,b,c,g,fwf".rsplit(",",1)) #['a,b,c,g', 'fwf']
+print(" ".join(["Hello", "World"])) #Hello World
+print("apple-pie".partition("-")) #('apple', '-', 'pie')
+print("apple-pie".rpartition("-")) #('apple', '-', 'pie')
+
+
+#7 WhiteSpaces &Trimming Methods
+print(" hello ".strip()) #hello
+print("---hello".lstrip("-")) #hello
+print("hello---".rstrip("-")) #hello
+
+#8. Encoding & Decoding Methods
+print('PythonProgramming'.encode("utf-8")) #b'PythonProgramming'
+print(b'hello'.decode("utf-8")) #hello
+
+
+
+
 
 
 
