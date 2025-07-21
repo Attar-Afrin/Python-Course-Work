@@ -30,5 +30,25 @@ print(student) #{'name': 'Alice', 'Time': 'Afternoon'}
 print(student.popitem()) #('Time', 'Afternoon')
 #NOTE---->PopItem is used to delete the last item of the dictionary
 
-print(student.clear())
-print(student)
+print(student.clear()) #None
+print(student) #{}
+
+#3. Built-in-Methods
+#3.1 Accessing Data
+
+student = {
+
+"name": "Alice",
+"age": 21,
+"course": "Computer Science",
+"duration":6,
+"Fav":"Reading"
+
+}
+print(student.get("Fav")) #Reading
+print(student.keys()) #dict_keys(['name', 'age', 'course', 'duration', 'Fav'])
+print(student.values()) #dict_values(['Alice', 21, 'Computer Science', 6, 'Reading'])
+print(student.items()) #dict_items([('name', 'Alice'), ('age', 21), ('course', 'Computer Science'), ('duration', 6), ('Fav', 'Reading')])
+
+#3.2 Adding and Updating Data
+print(student.update({"age":25})) 
