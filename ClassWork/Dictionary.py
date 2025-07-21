@@ -60,4 +60,10 @@ print(student) #{'name': 'Alice', 'age': '25', 'course': 'Computer Science', 'du
 print(student.pop("age")) #25
 print(student.popitem()) #('city', 'Hyderabad')
 del student["Fav"]
-print(student)
+print(student) #{'name': 'Alice', 'course': 'Computer Science', 'duration': 6}
+# print(del student["name"]) NOTE---->Print Function should always allows a return value inside the function
+
+#4 Built-in_function
+print(len(student)) #3
+print(max(student)) #name
+print(sorted(student))
