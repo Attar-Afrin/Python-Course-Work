@@ -51,4 +51,13 @@ print(student.values()) #dict_values(['Alice', 21, 'Computer Science', 6, 'Readi
 print(student.items()) #dict_items([('name', 'Alice'), ('age', 21), ('course', 'Computer Science'), ('duration', 6), ('Fav', 'Reading')])
 
 #3.2 Adding and Updating Data
-print(student.update({"age":25})) 
+print(student.update({"age":"25"})) #None
+print(student) #{'name': 'Alice', 'age': '25', 'course': 'Computer Science', 'duration': 6, 'Fav': 'Reading'}Hyderabad
+print(student.setdefault("city","Hyderabad"))
+print(student) #{'name': 'Alice', 'age': '25', 'course': 'Computer Science', 'duration': 6, 'Fav': 'Reading', 'city': 'Hyderabad'}
+
+#3.3 Removing Data
+print(student.pop("age")) #25
+print(student.popitem()) #('city', 'Hyderabad')
+del student["Fav"]
+print(student)
