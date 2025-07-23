@@ -17,7 +17,7 @@ print(set1.union(set2)) #{1, 2, 4, 5, 6, 7, 8, 9, 56}
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 result = set1 & set2
-print(result)
+print(result) #{3}
 
 
 

@@ -66,4 +66,12 @@ print(student) #{'name': 'Alice', 'course': 'Computer Science', 'duration': 6}
 #4 Built-in_function
 print(len(student)) #3
 print(max(student)) #name
-print(sorted(student))
+print(sorted(student)) #['course', 'duration', 'name']
+
+#5 Nested Dictionaries
+students = {
+"Alice": {"age": 21, "course": "CS"},
+"Bob": {"age": 22, "course": "Math"}
+}
+print(students["Alice"]["course"]) #CS
+
