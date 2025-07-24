@@ -22,6 +22,20 @@ s=0
 while(n>0):
     s+=(n%10)
     n//=10
-print(s)
+print(s) #Enter the Number : 1025----->8
+
+
+#Palindrome Checking
+n=int(input("Enter the number to Check the Palindrome"))
+temp=n
+rev=0
+while n>0:
+    rev=rev*10+(n%10)
+    n//=10
+if(rev==temp):
+    print("Palindrome")
+else:
+    print("Not a palindrome")        
+
 
 
