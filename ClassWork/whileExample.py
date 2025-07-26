@@ -35,7 +35,7 @@ while n>0:
 if(rev==temp):
     print("Palindrome")
 else:
-    print("Not a palindrome")        
+    print("Not a palindrome")     #Enter the number to Check the Palindrome1234321---->Palindrome   
 
 
 

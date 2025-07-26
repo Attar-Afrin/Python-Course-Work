@@ -185,6 +185,18 @@ for row in range(n):
             print(" ",end=" ")
     print()
 
+'''
+* * * * * * * * * 
+  *           *
+    *       *
+      *   *
+        *
+      *   *
+    *       *
+  *           *
+* * * * * * * * *
+'''
+
 n=int(input("Enter n value for z---pattern"))
 for row in range(n):
     for col in range(n):
