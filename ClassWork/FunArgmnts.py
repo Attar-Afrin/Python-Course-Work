@@ -1,5 +1,5 @@
 #1 Positional Arguments
-'''def stu_names(name,rollno,marks,grades,course):
+def stu_names(name,rollno,marks,grades,course):
     print(name,rollno,marks,grades,course)
 
 name=input("Name :")
@@ -9,18 +9,18 @@ grades=input("Grades :")
 course=input("Coures:")
 stu_names(name,rollno,marks,grades,course)
 '''
-'''Name :Afrin
+Name :Afrin
 Roll No503
 Marks: 100
 Grades :A
 Coures:python
 Afrin 503 100 A python
-'''
-'''stu_names(rollno,marks,grades,course,name)
-# Note===positional arguments takes the arguments in oreder wise we can give values statically
-'''
 
+'''
+stu_names(rollno,marks,grades,course,name)
+# Note===positional arguments takes the arguments in oreder wise we can give values statically
 #2 Keyword Arguments
+
 def student_details(name,rollno,marks,grade,course):
     print('Name:',name)
     print('Rollno:',rollno)
@@ -39,6 +39,7 @@ student_details(name=name,rollno=rollno,marks=marks,grade=grade,course=student_c
 student_details(rollno=rollno,name=name,grade=grade,course=student_course,marks=marks)
 
 student_details(rollno=56,name='ramya',grade='A',course='Mysql',marks=99)
+
 '''
 Name: Afreen
 Roll no: 23
@@ -61,3 +62,16 @@ Marks: 99
 Grade: A
 Course: Mysql
 '''
+
+# Variable Length
+def display_products(**product):
+    print("\nProducts and Prices: ")
+    for i in product:
+        print(f'{i}: ${product[i]}')
+
+display_products(laptop=60000,phone=35000,watch=15000,fridge=200000)
+display_products(fashwash=600,perfume=2000,eyeliner=1500,powder=2500)
+display_products(beetroot=40,apple=50)
+
+
+
