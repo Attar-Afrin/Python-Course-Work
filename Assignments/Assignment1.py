@@ -30,3 +30,15 @@ print(f"Course Name: {course_name}")
 print(f"Available Slots: {available_slots}")
 print(f"Course Features: {course_features}")
 print(f"Instructor Info: {instructor_name}, Contact: {instructor_contact}, Location: {instructor_location}")
+'''
+--- E-Learning Course Information ---
+
+Categories: programming,softskills
+Discount: 5.00%
+Course Price: ₹40000.00
+Course ID: PFS-31
+Course Name: Python
+Available Slots: 10
+Course Features: video recording, exams,weekly tests
+Instructor Info: Sowmya Mam, Contact: 280750505071, Location: hyderabad
+'''
