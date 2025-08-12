@@ -1,4 +1,5 @@
-# Add Two Numbers
+# 1 Add Two Numbers
+
 num=list(map(int,input("Enter Two numbers").split()))
 print(sum(num))
 # Enter Two numbers10 20
@@ -9,7 +10,7 @@ sq=n*n
 print(sq) #Enter Number to Square6
 # 36
 
-#Area of a circle
+#3 Area of a circle
 rad=int(input("Enter Radius"))
 area=3.14*(rad**2)
 print(area)
@@ -123,7 +124,7 @@ def incr_dict(d):
     print(d)
 incr_dict({'a':1,'b':2,'c':3}) #{'a': 2, 'b': 3, 'c': 4}
 
-#Factorail Of Number
+#17 Factorail Of Number
 
 def fact(n):
     if n==0:
@@ -131,7 +132,7 @@ def fact(n):
     return n * fact(n-1)
 print(fact(3)) #6
 
-# Sum of First natural Number
+#19 Sum of First natural Number
 def NatSum(n):
     s=0
     for i in range(n+1):
@@ -150,3 +151,4 @@ def maximum(a,b,c):
     return max(a,b,c)
 maxNum=maximum(22,45,12)
 print(maxNum) #45
+
