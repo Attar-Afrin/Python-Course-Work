@@ -64,6 +64,70 @@ def quiz(n):
         else:
             print("No")
             ans_count-=1 
+    if n==6:
+        ans="b"
+        print("6. What is the output of: print(2 ** 3)?\na)  6\nb)  8\nc)  9\nd)  23")
+        print("Your Answer  (a/b/c/d)",end=" ")
+        ch=input().lower()
+        if ch==ans:
+            print("Yes Correct")
+            ans_count+=1
+        else:
+            print("No")
+            ans_count-=1 
+    if n==7:
+        ans="c"
+        print("7. How do you insert comments in Python code?\na)  // comment\nb)  <!-- comment -->\nc)  # comment\nd)  /* comment */")
+        print("Your Answer  (a/b/c/d)",end=" ")
+        ch=input().lower()
+        if ch==ans:
+            print("Yes Correct")
+            ans_count+=1
+        else:
+            print("No")
+            ans_count-=1 
+    if n==8:
+        ans="b"
+        print("8. What is the output of: bool(0)?\na)  True\nb)  False\nc)  0\nd)  Error")
+        print("Your Answer  (a/b/c/d)",end=" ")
+        ch=input().lower()
+        if ch==ans:
+            print("Yes Correct")
+            ans_count+=1
+        else:
+            print("No")
+            ans_count-=1 
+    if n==9:
+        ans="b"
+        print("9. What is the correct way to check equality in Python?\na)  =\nb)  ==\nc)  equals\nd)  :=")
+        print("Your Answer  (a/b/c/d)",end=" ")
+        ch=input().lower()
+        if ch==ans:
+            print("Yes Correct")
+            ans_count+=1
+        else:
+            print("No")
+            ans_count-=1 
+    if n==10:
+        ans="c"
+        print("10. Which keyword is used to handle exceptions in Python?\na)  exception\nb)  catch\nc)  try\nd)  handle")
+        print("Your Answer  (a/b/c/d)",end=" ")
+        ch=input().lower()
+        if ch==ans:
+            print("Yes Correct")
+            ans_count+=1
+        else:
+            print("No")
+            ans_count-=1 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -79,7 +143,7 @@ ans_count=0
 wrg_count=0
 print("Welcome to the Python Quiz Game Organized By Afreen")
 res=[]
-while n<=5:
+while n<=10:
     quiz(n)
     n+=1
 print(f"Your Final Score : {ans_count}/10")
