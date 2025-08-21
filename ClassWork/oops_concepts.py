@@ -60,6 +60,18 @@ class Driver(Person):
         self.photo=photo
         self.vetype=vetype
         print(f"\n Hello {self.name}\n Your Driver account is Succesfully created")
+class DriverRides:
+    def driver_rides(self,exp,totalrides):
+        self.exp=exp
+        self.totalrides=totalrides
+        print(f"\n Hello {self.name}\n Your ride details are updated")
+class wheels_2:
+    def price_2W(self):
+        self.fare=30
+        return self.fare
+    
+
+
 class User(Person):
     def userdetails(self,drop,pickup):
         self.pickup=pickup
