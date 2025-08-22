@@ -57,3 +57,119 @@ class C(A,B):
         print("This is grand child class: C")
 c=C()
 c.print_()
+'''
+This is parent class: A
+This is child class: B
+This is grand child class: C
+'''
+#example of inheritance
+class Phone:
+    def __init__(self,user):
+        self.user=user
+        print(f"Hello {self.user} Welcome, enjoy the features Like")
+        print("Call")
+        print("SMS")
+        print("Games")
+        print("Alarm")
+        print("FM Radio")
+class Phone_V1(Phone):
+    def __init__(self,user):
+        self.user=user
+        super().__init__(user)
+        print("Camera")
+        print("Bluetooth")
+        print("4G Internet")
+        print("Finger Print")
+class Phone_V2(Phone_V1):
+    def __init__(self,user):
+        self.user=user
+        super().__init__(user)
+        print("5G Internet")
+        print("Scanner")
+        print("Face_id")
+class Phone_V3():
+    def __init__(self,user):
+        self.user=user
+        print("This is trail Features")
+        print("Thiz is the Trail Features")
+        print("AI_Integration")
+        print("Updated_system")
+        print("Maps")
+class Phone_V4(Phone_V3,Phone_V2):
+    def __init__(self,user):
+        self.user=user
+        Phone_V3.__init__(self,user)
+        Phone_V2.__init__(self,user)
+
+        print("Thiz is the Trail Features")
+        print("AI_Integration")
+        print("Updated_system")
+afreen=Phone('afreen')
+ramya=Phone_V1('ramya')
+revathi=Phone_V2('revathi')
+keerthan=Phone_V3("keerthana")
+nihitha=Phone_V4("nihitha")
+'''
+This is parent class: A
+This is child class: B
+This is grand child class: C
+Hello afreen Welcome, enjoy the features Like
+Call
+SMS
+Games
+Alarm
+FM Radio
+Hello ramya Welcome, enjoy the features Like
+Call
+SMS
+Games
+Alarm
+FM Radio
+Camera
+Bluetooth
+4G Internet
+Finger Print
+Hello revathi Welcome, enjoy the features Like
+Call
+SMS
+Games
+Alarm
+FM Radio
+Camera
+Bluetooth
+4G Internet
+Finger Print
+5G Internet
+Scanner
+Face_id
+This is trail Features
+Thiz is the Trail Features
+AI_Integration
+Updated_system
+Maps
+This is trail Features
+Thiz is the Trail Features
+AI_Integration
+Updated_system
+Maps
+Hello nihitha Welcome, enjoy the features Like
+Call
+SMS
+Games
+Alarm
+FM Radio
+Camera
+Bluetooth
+4G Internet
+Finger Print
+5G Internet
+Scanner
+Face_id
+Thiz is the Trail Features
+AI_Integration
+Updated_system
+'''  
+    
+     
+    
+
