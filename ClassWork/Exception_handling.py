@@ -68,3 +68,15 @@ else:
     print("Code is free of exceptions")
 finally:
     print("End of the program")
+
+#Raise error explicitely
+try:
+    lst=['pfs_1','pfs_2','pfs_3']
+    new='jfs_1'
+    if not new.startswith("pfs"):
+        raise Exception("New Member is not pfs batch")
+    else:
+        lst.append(new)
+
+except Exception:
+    print("Exception is Raised")
