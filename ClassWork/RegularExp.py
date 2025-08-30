@@ -49,6 +49,22 @@ pattern=r'[:,*]'
 res=re.split(pattern,'pyth:on,programming*lang,uage')
 print(res) #['pyth', 'on', 'programming', 'lang', 'uage']
 
+#math any character except the new line
+import re
+pattern=r'h.t'
+res=re.findall(pattern,'hot hit hooooot jact')
+print(res) #['hot', 'hit']
+
+# ^ it is used to starts with the pattern or not 
+import re
+pattern=r'^h'
+res=re.findall(pattern,'hot hit hooooot jact')
+print(res)
+
+#
+ 
+
+
 
 
 
